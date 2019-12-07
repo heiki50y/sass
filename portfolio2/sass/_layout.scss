@@ -1,0 +1,108 @@
+.header {
+    position: relative;
+    z-index: 1;
+
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 96%;
+   
+
+    @include respond(phone) {
+
+        top: 7%;
+        left: 50%;
+        margin-top: 0%;
+        margin-right: 0.1rem;
+    }
+    
+}
+
+.section-banner {
+    background-color: #05386b;
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+   
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 92%, 82% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 82% 100%, 0 100%);
+    }
+
+   
+}
+
+.container {
+    margin: auto;
+    width: 112rem;
+
+    @include respond(tab-port) {
+        width: 90rem;
+    }
+
+    @include respond(phone) {
+        width: 90%;
+    }
+}
+
+.section-about {
+    padding: 20rem 0rem;
+    
+    @include respond(phone) {
+        padding: 10rem 0rem;
+    }
+}
+
+.flex {
+    display: flex;
+
+    @include respond(phone) {
+        display: block;
+        width: 100%;
+    }
+}
+
+.section-projects {
+    
+    padding: 15rem 0;
+    background-color: #05386b;
+    clip-path: polygon(8% 0, 100% 0, 100% 95%, 0 100%, 0 8%);
+    -webkit-clip-path: polygon(8% 0, 100% 0, 100% 95%, 0 100%, 0 8%);
+
+    @include respond(phone) {
+        padding: 10rem 0rem;
+        clip-path: polygon(16% 0, 100% 0, 100% 97%, 0 100%, 0 3%);
+        -webkit-clip-path: polygon(16% 0, 100% 0, 100% 97%, 0 100%, 0 3%);
+    }
+    
+}
+
+.footer {
+    padding: 9rem 0;
+    background-color:  #05386b;;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, 
+    [col-start] minmax(min-content, 14rem)[col-end]) 
+    [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+
+.section-contact {
+    padding: 15rem 0;
+    
+    @include respond(phone) {
+        padding: 10rem 0rem;
+    }
+}
+
+
+
+
+
+
+
