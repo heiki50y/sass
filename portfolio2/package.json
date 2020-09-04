@@ -9,7 +9,7 @@
   "author": "Heiki Kotsar",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "sass": "^1.23.6"
   }
 }
